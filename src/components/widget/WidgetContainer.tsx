@@ -429,7 +429,10 @@ export const WidgetContainer = ({ isOpen, onClose }: WidgetContainerProps) => {
                           </div>
                           
                           <div className="space-y-3">
-                            <button 
+                            <motion.button 
+                              initial={{ opacity: 0, x: 50 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.4, delay: 0.1 }}
                               onClick={() => {
                                 setSelectedAgent({
                                   name: "Sarah Anderson",
@@ -459,9 +462,12 @@ export const WidgetContainer = ({ isOpen, onClose }: WidgetContainerProps) => {
                                 <p className="text-sm text-muted-foreground -mt-0.5">Academic Advisor</p>
                                 <p className="text-xs text-muted-foreground mt-1">Specializes in course selection and academic planning</p>
                               </div>
-                            </button>
+                            </motion.button>
 
-                            <button 
+                            <motion.button 
+                              initial={{ opacity: 0, x: 50 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.4, delay: 0.2 }}
                               onClick={() => {
                                 setSelectedAgent({
                                   name: "Michael Johnson",
@@ -491,9 +497,12 @@ export const WidgetContainer = ({ isOpen, onClose }: WidgetContainerProps) => {
                                 <p className="text-sm text-muted-foreground -mt-0.5">Admissions Specialist</p>
                                 <p className="text-xs text-muted-foreground mt-1">Expert in application requirements and enrollment</p>
                               </div>
-                            </button>
+                            </motion.button>
 
-                            <button 
+                            <motion.button 
+                              initial={{ opacity: 0, x: 50 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.4, delay: 0.3 }}
                               onClick={() => {
                                 setSelectedAgent({
                                   name: "Emma Wilson",
@@ -523,9 +532,12 @@ export const WidgetContainer = ({ isOpen, onClose }: WidgetContainerProps) => {
                                 <p className="text-sm text-muted-foreground -mt-0.5">Financial Aid Counselor</p>
                                 <p className="text-xs text-muted-foreground mt-1">Specializes in scholarships, grants, and financial planning</p>
                               </div>
-                            </button>
+                            </motion.button>
 
-                            <button 
+                            <motion.button 
+                              initial={{ opacity: 0, x: 50 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.4, delay: 0.4 }}
                               onClick={() => {
                                 setSelectedAgent({
                                   name: "David Chen",
@@ -555,7 +567,7 @@ export const WidgetContainer = ({ isOpen, onClose }: WidgetContainerProps) => {
                                 <p className="text-sm text-muted-foreground -mt-0.5">Campus Life Coordinator</p>
                                 <p className="text-xs text-muted-foreground mt-1">Expert in housing, activities, and student services</p>
                               </div>
-                            </button>
+                            </motion.button>
                           </div>
                         </div>
                       </div>
